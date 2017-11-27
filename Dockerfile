@@ -2,6 +2,8 @@ FROM centos:6
 
 MAINTAINER MUSTOFA <mustopainfo@gmail.com>
 
+RUN yum -y update
+
 RUN yum install -y wget perl iputils && \
     wget http://software.virtualmin.com/gpl/scripts/install.sh && \
     yum clean all
